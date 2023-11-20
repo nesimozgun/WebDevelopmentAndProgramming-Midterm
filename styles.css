@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* HEADER SECTION */
+
+.header {
+  display: flex;
+  background-color: #7aa66b;
+  padding: 15px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#logo {
+  width: 150px;
+}
+
+/* MAIN SECTION CONTAINER*/
+
+.row {
+  display: flex;
+}
+
+
+/* MAIN SECTION LEFT SIDE COLUMN */
+
+.column.side {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.currency {
+  display: flex;
+  margin: 5px;
+  padding: 0px 20px;
+  border-radius: 10%;
+  background-color: #b4e4a5;
+}
+
+.sign {
+  padding: 10px;
+}
+
+/* MAIN SECTION MIDDLE COLUMN */
+
+.column.middle {
+  flex: 2;
+  text-align: center;
+}
+
+/* MAIN SECTION RIGHT SIDE COLUMN */
+
+.info {
+  background-color: #b4e4a5;
+}
+
+.wallet {
+  background-color: #b4e4a5;
+}
+
+.transactions {
+  background-color: #b4e4a5;
+}
+
+.transaction {
+  border: 2px solid white;
+  padding: 2px;
+}
+
+/* FOOTER SECTION */
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f1f1f1;
+  padding: 20px 100px;
+  text-align: center;
+}
+
+.footer-element {
+    background-color: #7aa66b;
+    padding: 40px;
+    border-radius: 10%;
+    text-align: center;
+}
+
+p{
+  text-align: center;
+}
