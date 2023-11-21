@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
   box-sizing: border-box;
 }
@@ -10,8 +12,9 @@ body {
 
 .header {
   display: flex;
-  background-color: #7aa66b;
-  padding: 15px 30px;
+  width: 100%;
+  background-color: #379683;
+  padding: 0px 30px;
   justify-content: space-between;
   align-items: center;
 }
@@ -20,16 +23,24 @@ body {
   width: 150px;
 }
 
+#motto {
+  color: #3B4650;
+}
+
 /* MAIN SECTION CONTAINER*/
 
 .row {
   display: flex;
+  background-color: #EDF5E1;
 }
 
 
-/* MAIN SECTION LEFT SIDE COLUMN */
+/* MAIN SECTION SIDE COLUMNS */
 
 .column.side {
+  margin: 5px;
+  border-radius: 10px;
+  background-color: #5CDB95;
   display: flex;
   flex-direction: column;
   width: 200px;
@@ -37,12 +48,15 @@ body {
   align-items: center;
 }
 
+/* MAIN SECTION LEFT SIDE COLUMN */
+
 .currency {
   display: flex;
   margin: 5px;
   padding: 0px 20px;
   border-radius: 10%;
-  background-color: #b4e4a5;
+  background-color: #EDF5E1;
+  color: #3B4650;
 }
 
 .sign {
@@ -53,45 +67,79 @@ body {
 
 .column.middle {
   flex: 2;
+  background-color: #EDF5E1;
   text-align: center;
+  color: #3B4650;
 }
 
 /* MAIN SECTION RIGHT SIDE COLUMN */
 
 .info {
-  background-color: #b4e4a5;
+  background-color: #EDF5E1;
+  border-radius: 10%;
+  margin: 30px 10px;
+  padding: 10px 50px;
 }
 
 .wallet {
-  background-color: #b4e4a5;
+  background: #EDF5E1;
+  border-radius: 10%;
+  margin: 30px 10px;
+  padding: 10px 50px;
 }
 
 .transactions {
-  background-color: #b4e4a5;
+  background: #EDF5E1;
+  border-radius: 10%;
+  margin: 30px 10px;
 }
 
-.transaction {
-  border: 2px solid white;
-  padding: 2px;
+#history-icon {
+  width: 40px;
+  margin: 10px;
+}
+
+.transaction-red {
+  color: red;
+  padding: 15px 25px;
+}
+
+.transaction-green {
+  color: green;
+  padding: 15px 25px;
 }
 
 /* FOOTER SECTION */
 
 .footer {
   display: flex;
+  width: 100%;
   justify-content: space-around;
-  background-color: #f1f1f1;
+  background-color: #3B4650;
   padding: 20px 100px;
-  text-align: center;
 }
 
 .footer-element {
-    background-color: #7aa66b;
+    background-color: #5CDB95;
     padding: 40px;
-    border-radius: 10%;
+    border-radius: 100%;
     text-align: center;
 }
 
-p{
+.footer-icon {
+  width: 30px;
+}
+
+#copyright{
   text-align: center;
+}
+
+@media screen and (max-width: 410px) {
+  .header {
+  min-width: 450px;
+  }
+
+  .footer {
+  min-width: 450px;
+  }
 }

@@ -5,7 +5,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Nesim Bank</title>
 	<link rel="icon" href="https://static.thenounproject.com/png/39954-84.png">
-  <link href='https://unpkg.com/css.gg@2.0.0/icons/css/profile.css' rel='stylesheet'>
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,7 +13,7 @@
 
 	<div class="header">
       <img id="logo" src="assets/logo_transparent.png" alt="">
-      <h3>Safe hands.</h3>
+      <h3 id="motto">Güvenle.</h3>
 	</div>
 	
 <!-- MAIN SECTION -->
@@ -23,7 +22,7 @@
     
     <!-- MAIN SECTION LEFT -->
 
-		<div class="column side" style="background-color:#aaa;">
+		<div class="column side">
       <div class="currency">
         <img class="sign" src="assets/dollar.svg" alt="">
         <h4>28.76 TL</h4>
@@ -52,9 +51,9 @@
 
     <!-- MAIN SECTION MIDDLE -->
 
-		<div class="column middle" style="background-color:#bbb;">
+		<div class="column middle">
       <div class="main-header">
-        <h1>WELCOME</h1>
+        <h1>HOŞ GELDİNİZ</h1>
         <hr color="black">
         <h2>Heading 1</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae saepe nostrum dolore ipsam vel voluptate.</p>
@@ -67,7 +66,7 @@
 		
     <!-- MAIN SECTION RIGHT -->
     
-    <div class="column side" style="background-color:#ccc;">
+    <div class="column side">
       <div class="info">
         <img src="assets/profile.svg" alt="">
         <h3>John Doe</h3>
@@ -77,9 +76,11 @@
         <p>5000 TL</p>
       </div>
       <div class="transactions">
-        <div class="transaction">transaction</div>
-        <div class="transaction">transaction</div>
-        <div class="transaction">transaction</div>
+        <img id="history-icon" src="assets/history.svg" alt="">
+        <div class="transaction-red">Ahmet'e 500 TL</div>
+        <div class="transaction-red">Ali'ye 300 TL</div>
+        <div class="transaction-green">Ayşe'den 100 TL</div>
+        <div class="transaction-green">Veli'den 1000 TL</div>
       </div>
     </div>
 	</div>
@@ -87,10 +88,16 @@
   <!-- FOOTER SECTION -->
 
 	<div class="footer">
-		<div class="footer-element">Announcements</div>
-    <div class="footer-element">About Us</div>
-    <div class="footer-element">Contact</div>
+		<div class="footer-element">
+      <img class="footer-icon" src="assets/announcement.svg" alt="">
+    </div>
+    <div class="footer-element">
+      <img class="footer-icon" src="assets/about.svg" alt="">
+    </div>
+    <div class="footer-element">
+      <img class="footer-icon" src="assets/contact.svg" alt="">
+    </div>
 	</div>
-  <P>@2023 CENGBANK COPYRIGHT</P>
+  <P id="copyright">@2023 CENGBANK COPYRIGHT</P>
 </body>
 </html>
